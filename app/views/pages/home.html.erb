@@ -1,7 +1,9 @@
 
 <main role="main" class="inner cover">
   <h1 class="cover-heading">ASL Salon</h1>
-  <h3>Hi, <%= current_user.first_name if current_user %></h3>
+  <% if current_user %>
+    <h3>Hi, <%= current_user.first_name %></h3>
+  <% end %>
   <p class="lead">Come make yourself the most beautiful person the world has ever seen!</p>
   <p class="lead">
     <%= link_to "Learn More", about_path, class: "btn btn-lg btn-secondary" %>

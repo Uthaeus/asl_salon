@@ -1,11 +1,8 @@
 module ApplicationHelper
 
-  module ASLViewTool
-    class Renderer
-      def self.copyright name, msg
-      "&copy; #{Time.now.year} | <b>#{name}<b> #{msg}".html_safe
-      end
-    end
+
+  def copyright_generator
+    AslViewTool::Renderer.copyright 'ASL Salon', 'All rights reserved'
   end
 
 end
