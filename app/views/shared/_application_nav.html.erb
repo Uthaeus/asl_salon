@@ -2,17 +2,17 @@
   <div class="inner">
     <h3 class="masthead-brand">ASL Salon</h3>
     <nav class="nav nav-masthead">
-      <a class="nav-link active"><%= link_to 'Home', root_path %></a>
-      <a class="nav-link"><%= link_to 'About', about_path %></a>
-      <a class="nav-link"><%= link_to 'Contact', contact_path %></a>
-      <a class="nav-link"><%= link_to "FAQ's", faq_path %></a>
-      <a class="nav-link"><%= link_to 'Products', products_path %></a>
+      <a class="nav-link active hnav"><%= link_to 'Home', root_path %></a>
+      <a class="nav-link hnav"><%= link_to 'About', about_path %></a>
+      <a class="nav-link hnav"><%= link_to 'Contact', contact_path %></a>
+      <a class="nav-link hnav"><%= link_to "FAQ's", faq_path %></a>
+      <a class="nav-link hnav"><%= link_to 'Products', products_path %></a>
 
       <% if current_user %>
-        <a class="nav-link"><%= link_to "Logout", destroy_user_session_path, method: :delete %></a>
+        <a class="nav-link hnav"><%= link_to "Logout", destroy_user_session_path, method: :delete %></a>
       <% else %>
-        <a class="nav-link"><%= link_to "Login", new_user_session_path %></a>
-        <a class="nav-link"><%= link_to "Register", new_user_registration_path %></a>
+        <a class="nav-link hnav"><%= link_to "Login", new_user_session_path %></a>
+        <a class="nav-link hnav"><%= link_to "Register", new_user_registration_path %></a>
       <% end %>
     </nav>
   </div>
