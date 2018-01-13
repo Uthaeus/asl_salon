@@ -4,6 +4,7 @@
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
     <meta name="keywords" content="<%= @seo_keywords %>" />
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <%= favicon_link_tag 'favicons/favicon.ico' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -15,24 +16,29 @@
       <div class="site-wrapper-inner">
 
         <div class="cover-container">
-          <%= render "shared/nav" %>
+          <%= render "shared/application_nav" %>
 
           <p class="notice"><%= notice %></p>
           <p class="alert"><%= alert %></p>
 
-          <% if current_user %>
-            <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-          <% else %>
-            <%= link_to "Login", new_user_session_path %>
-            <%= link_to "Register", new_user_registration_path %>
-          <% end %>
+          
 
           <%= yield %>
 
           <%= render "shared/application_footer" %>
         </div>
       </div>
-    </div>
+    </div>  
+    <!-- <center>
+      <div class="m-nav m-red">
+        <input type="text" placeholder="Search Box">
+        <li><a href="#"><i style="font-size:27px;" class="material-icons">face</i></a></li>
+        <li><a href="#"><i style="font-size:27px;" class="material-icons">public</i></a></li>
+        <li><a href="#"><i style="font-size:27px;" class="material-icons">person</i></a></li>
+        <li><a href="#"><i style="font-size:27px;" class="material-icons">home</i></a></li>
+      </div>
+    </center> --> 
+
   </body>
 </html>
 
