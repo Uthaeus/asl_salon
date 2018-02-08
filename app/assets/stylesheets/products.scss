@@ -4,6 +4,7 @@ body {
   height: 100%;
   background: url('pexels-photo-132474.jpeg') no-repeat center center fixed;
   font-family: 'Averia Serif Libre', cursive;
+  margin: 15px 20px 15px 20px;
 }
 
 .index-btn {
@@ -29,10 +30,33 @@ body {
 }
 
 .prod-nav {
-  color: black;
+  display: flex;
+  position: relative;
+  float: right;
+  margin-top: -30px;
+
 }
 
-.prod-nav:hover {
+.prod-nav a:hover {
   text-decoration: none;
   color: grey;
 }
+
+.footer-copy {
+  color: black;
+  margin-left: 60px;
+  margin-bottom: -20px;
+}
+
+.footer-buttons {
+  margin-bottom: 15px;
+}
+
+.mastfoot {
+  position: relative;
+}
+
+
+
+
+
