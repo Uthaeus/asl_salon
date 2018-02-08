@@ -1,34 +1,26 @@
 <p id="notice"><%= notice %></p>
-
-<h1>Products</h1>
-
-<div class="product-index">
-  <div class="row">
-    <% @products.each do |product| %>
-    <div class="col-md-4">
-      <div>
-        <p><%= product.title %></p>
-        <br>
-        <p><%= product.brand %></p>
-        <br>
-        <p><%= "$%.2f" % product.price %></p>
-        <br>
+<div class="product-lead">
+  <h1>Products</h1>
+</div>
+<div class="album text-muted">
+  <div class="container">
+    <div class="product-index">
+      <div class="row">
+        
+        <% @products.each do |product| %>
+          <div class="col-md-4">
+            <p><%= link_to "#{product.title}", product %></p>
+            <p><%= image_tag product.image, width: '25%' %></p>
+          </div>
+        <% end %>
         
       </div>
     </div>
-    <div class="col-md-8">
-      <p><%= image_tag product.image, width: '50%' %></p>
-      <hr>
-      <div class="row">
-        <p><%= link_to 'Show', product, class: "btn btn-primary index-btn" %></p>
-        <p><%= link_to 'Edit  ', edit_product_path(product), class: "btn btn-primary index-btn" %></p>
-        <p><%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary index-btn" %></p>
-      </div>
-    </div>
-    <% end %>
   </div>
 </div>
 
 <br>
 
 <%= link_to 'New Product', new_product_path, class: 'btn btn-primary' %>
+
+

@@ -1,11 +1,38 @@
 @import "bootstrap";
 
 body {
-  background: url('wood-old-wood-weathered-structure-158726.jpeg') no-repeat center center fixed;
+  height: 100%;
+  background: url('pexels-photo-132474.jpeg') no-repeat center center fixed;
   font-family: 'Averia Serif Libre', cursive;
 }
 
 .index-btn {
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.product-lead {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.product-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.inner {
+  display: flex;
+  margin-left: 30px;
+  margin-top: 15px;
+}
+
+.prod-nav {
+  color: black;
+}
+
+.prod-nav:hover {
+  text-decoration: none;
+  color: grey;
 }
