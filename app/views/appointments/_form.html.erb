@@ -11,17 +11,17 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field-group">
     <%= form.label :name %>
     <%= form.text_field :name, id: :appointment_name %>
   </div>
 
-  <div class="field">
+  <div class="field-group">
     <%= form.label :start_time %>
     <%= form.datetime_select :start_time, id: :appointment_start_time %>
   </div>
 
-  <div class="actions">
+  <div>
     <%= form.submit %>
   </div>
 <% end %>

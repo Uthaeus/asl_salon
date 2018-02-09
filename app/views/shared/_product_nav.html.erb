@@ -7,6 +7,7 @@
       <a class="nav-link hnav"><%= link_to 'Contact', contact_path %></a>
       <a class="nav-link hnav"><%= link_to "FAQ's", faq_path %></a>
       <a class="nav-link hnav"><%= link_to 'Products', products_path %></a>
+      <a class="nav-link hnav"><%= link_to 'Appointments', appointments_path %></a>
 
       <% if current_user %>
         <a class="nav-link hnav"><%= link_to "Logout", destroy_user_session_path, method: :delete %></a>

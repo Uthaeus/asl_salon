@@ -1,5 +1,17 @@
-<h1>New Appointment</h1>
+<div class='container'>
 
-<%= render 'form', appointment: @appointment %>
+  <h1>New Appointment</h1>
 
-<%= link_to 'Back', appointments_path %>
+  <div class='row'>
+    <div class='col-md-8'>
+
+      <%= render 'form', appointment: @appointment %>
+
+    </div>
+
+    <div class='col-md-4'>
+
+    </div>
+  </div>
+  <%= link_to 'Back', appointments_path, class: 'btn btn-primary btn-block' %>
+</div>

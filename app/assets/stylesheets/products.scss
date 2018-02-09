@@ -1,9 +1,13 @@
 @import "bootstrap";
 
+html,
 body {
-  height: 100%;
-  background: url('pexels-photo-132474.jpeg') no-repeat center center fixed;
+  background: url('pexels-photo-132474.jpeg') center no-repeat;
+  background-size: cover;
   font-family: 'Averia Serif Libre', cursive;
+}
+
+body {
   margin: 15px 20px 15px 20px;
 }
 
